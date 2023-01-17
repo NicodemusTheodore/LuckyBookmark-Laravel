@@ -64,7 +64,7 @@ class ReviewController extends Controller
         $data->star    = $request->star;
         $data->save();
 
-        $message = "Review Book Success.!";
+        $message = "Review Book Success!";
         if ($is_complete_challenge) {
             $message.=' You already earned point for review challenge!';
         }

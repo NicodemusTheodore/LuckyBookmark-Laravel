@@ -38,7 +38,7 @@
                                     <i class="fa fa-edit"></i>
                                 </a>
                                 @if($value->id != 1)
-                                    <a type="button" class="btn btn-danger btn-sm" href="{{ URL::to('/delete-review/'.$value->id) }}" onclick="return confirm('Are you sure.?')">
+                                    <a type="button" class="btn btn-danger btn-sm" href="{{ URL::to('/delete-item/'.$value->id) }}" onclick="return confirm('Are you sure?')">
                                         <i class="fa fa-trash"></i>
                                     </a>
                                 @endif
