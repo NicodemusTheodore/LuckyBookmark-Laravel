@@ -42,7 +42,7 @@
                             <td>{{ shop_status($value->status) }}</td>
                             <td>
                                 <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#edit-modal-{{ $value->id }}">
-                                    <i class="fa fa-edit"></i> Rubah Status
+                                    <i class="fa fa-edit"></i> Change Status
                                 </button>
                             </td>
                         </tr>
@@ -59,7 +59,7 @@
                     <form method="POST" action="{{ URL::to('item-transaction-update', $value->id) }}">
                         @csrf
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Rubah Status</h5>
+                            <h5 class="modal-title" id="exampleModalLongTitle">Change Status</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>

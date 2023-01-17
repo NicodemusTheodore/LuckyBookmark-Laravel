@@ -77,7 +77,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Get 1 key only redeem <b>{{ point_key_exchange()->value }}</b> points now.!
+                    Get 1 key only redeem <b>{{ point_key_exchange()->value }}</b> points now!
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

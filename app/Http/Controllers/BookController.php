@@ -305,7 +305,7 @@ class BookController extends Controller
 
         $user_keys = getUserKey($user_id);
         if ($user_keys < 1) {
-            return redirect()->back()->with('error', 'You don\'t have enough keys to unlock this book.!');
+            return redirect()->back()->with('error', 'You don\'t have enough keys to unlock this book!');
         }
 
         // Check if already open this book for human error
@@ -313,7 +313,7 @@ class BookController extends Controller
             ->where('book_id', $book_id)->first();
 
         if (!empty($check)) {
-            return redirect()->back()->with('error', 'You already unlock this book.!');
+            return redirect()->back()->with('error', 'You already unlock this book!');
         }
 
         // Add exclusive bok to user collection
@@ -327,6 +327,6 @@ class BookController extends Controller
         $user->keys = $user->keys-1;
         $user->save();
 
-        return redirect()->back()->with('success', 'Redeem exclusive book success.!');
+        return redirect()->back()->with('success', 'Redeem exclusive book success!');
     }
 }

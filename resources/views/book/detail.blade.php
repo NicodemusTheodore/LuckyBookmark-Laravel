@@ -104,11 +104,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Unlock this book with 1 Keys.?
+                    Unlock this book with 1 Keys?
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <a href="{{ URL::to('/unlock-book/'.$book->id) }}" class="btn btn-primary">Yes, Unlock Book Now.</a>
+                    <a href="{{ URL::to('/unlock-book/'.$book->id) }}" class="btn btn-primary">Yes, Unlock Book Now</a>
                 </div>
             </div>
         </div>

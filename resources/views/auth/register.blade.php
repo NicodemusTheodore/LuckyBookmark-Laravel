@@ -57,7 +57,7 @@
                     </div>
                 </form>
                 <p class="mb-0 mt-3">
-                    <a href="{{ URL::to('/login') }}" class="text-center">Already have an account? Login!</a>
+                    <a href="{{ URL::to('/login') }}" class="text-center">Already have an account? Login now</a>
                 </p>
             </div>
         <!-- /.card-body -->
